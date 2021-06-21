@@ -109,11 +109,15 @@
         max-width: 318px;
     }
     .hero__content-title {
-        padding-top: 180px;
+        padding-top: 0;
         font-size: 25px;
+    }
+    .hero__content-icons {
+        margin: 16px 0 -12px;
     }
     .hero__content-description {
         display: block;
+        font-size: 14px;
     }
     .hero__content-icon {
         margin-bottom: 15px;
