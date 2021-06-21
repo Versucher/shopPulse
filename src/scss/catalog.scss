@@ -1,0 +1,84 @@
+.catalog {
+    padding-bottom: 103px;
+    &__title {
+        @include font(30px, 700);
+        text-align: center;
+    }
+    &__buttons {
+        text-align: center;
+        margin: 68px 0;
+    }
+    &__btn {
+        @include font(18px, 500);
+        padding: 16px 46px;
+        background-color: $primred;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        transform: skewX(160deg);
+        margin-right: 8px;
+        cursor: pointer;
+        & span {
+            display: inline-block;
+            transform: skewX(-160deg);
+        }
+    }
+    &__item {
+        border: 2px solid #E8E8E8;
+        text-align: center;
+        padding: 20px 15px;
+        margin-bottom: 20px;
+        &-title {
+            @include font(16px, 700);
+            color: #0d0d0d;
+            margin-top: 20px;
+        }
+        &-text {
+            @include font(14px, 300);
+            color: #0d0d0d;
+            margin: 16px 0 17px;
+        }
+        &-link {
+            @include font(14px, 500);
+            color: $primred;
+        }
+        &-footer {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 40px;
+            &-price {
+                @include font(20px, 700);
+                color: #050505;
+                text-align: left;
+            }
+            &-price span {
+                @include font(14px, 300);
+                color: #555;
+                text-decoration: line-through;
+            }
+            &-btn {
+                height: 41px;
+                padding: 0 40px;
+                background-color: $primred;
+                border: none;
+                border-radius: 6px;
+                color: #fff;
+                cursor: pointer;
+                transition: .6s;
+                &:hover {
+                    background: red;
+                    transition: .6s;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                height: 2px;
+                width: 100%;
+                background-color: #e8e8e8;
+            }
+        }
+    }
+}

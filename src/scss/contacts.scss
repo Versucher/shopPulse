@@ -1,0 +1,45 @@
+.contacts {
+    position: relative;
+    &__block {
+        width: 461px;
+        height: 271px;
+        background-color: $primred;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 51px 59px;
+        text-align: center;
+        color: #fff;
+    }
+    &__address {
+        @include font(20px, 300);
+    }
+    &__tel {
+        margin: 36px 0;
+        @include font(20px, 700);
+    }
+    &__a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &__icons {
+        display: flex;
+        list-style-type: none;
+        column-gap: 29px;
+        justify-content: center;
+    }
+    &__icon {
+        color: #fff;
+        @include font(25px, 700);
+    }
+    &__li {
+        width: 51px;
+        height: 51px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
